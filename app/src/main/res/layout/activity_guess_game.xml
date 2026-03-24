@@ -3,27 +3,27 @@
 
     android:id="@+id/main"
     android:orientation="vertical"
-    android:gravity="center"
     android:padding="16dp"
+    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <EditText
+        android:id="@+id/inputNumber"
+        android:inputType="number"
+        android:hint="Enter number (1-10)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/buttonGuess"
+        android:text="Guess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
     <TextView
-        android:text="Hello World"
-        android:textSize="24sp"
-        android:layout_marginBottom="24dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <Button
-        android:id="@+id/btnPartB"
-        android:text="Go to Introduce"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <Button
-        android:id="@+id/btnPartC"
-        android:text="Go to Guess Game"
+        android:id="@+id/textResult"
+        android:textSize="18sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 </LinearLayout>
